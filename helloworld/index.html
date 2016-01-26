@@ -1,0 +1,31 @@
+<head>
+	<meta charset="utf-8"/>
+	<script src="https://fb.me/react-0.14.6.js"></script>
+    <script src="https://fb.me/react-dom-0.14.6.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.12.2.js"></script>
+</head>
+<body>
+</body>
+
+<script type="text/jsx">
+//Define react component class
+//A widget, view, must be instantiated then rendered
+//cookie cutter
+var HelloWorld = React.createClass ({
+	render: function() {
+		return <div>
+		Hello World
+		</div>
+	 }
+	});
+//All classes must implement render method
+
+//Ask react to render this class
+//cookie dough cutout
+var element = React.createElement(HelloWorld);
+
+//When we ask react to render this class, we will tell it where to 
+//place the rendered element in the dom
+//needs to be in body tag to show up in the DOM
+ReactDOM.render(element,document.body)
+</script>
